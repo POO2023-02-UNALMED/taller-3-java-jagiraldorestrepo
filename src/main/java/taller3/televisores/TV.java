@@ -85,11 +85,11 @@ public class TV {
 //----------------------------------------------------------
 	
 	public void volumenUp() {
-		this.setCanal(this.volumen+1);
+		this.setVolumen(this.volumen+1);
 	}
 	
 	public void volumenDown() {
-		this.setCanal(this.volumen-1);
+		this.setVolumen(this.volumen-1);
 	}
 //----------------------------------------------
 	public static int getNumTV() {
