@@ -16,7 +16,7 @@ public class Control {
 	
 	
 	
-	public void turnON() {
+	public void turnOn() {
 		tv.turnOn();
 	}
 	
@@ -24,7 +24,7 @@ public class Control {
 		tv.turnOff();
 	}
 	
-	public void canalUP() {
+	public void canalUp() {
 		tv.canalUp();
 	}
 	
@@ -36,6 +36,9 @@ public class Control {
 		tv.setCanal(canal);
 	}
 	
+	public void volumenUp() {
+		tv.volumenUp();
+	}
 	
 	public void setVolumen(int volumen) {
 		tv.setVolumen(volumen);
