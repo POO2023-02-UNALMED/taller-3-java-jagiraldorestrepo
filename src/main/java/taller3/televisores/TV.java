@@ -39,53 +39,35 @@ public class TV {
 	//-------------------------------------------------------------------
 	//cambiar canal
 	public void canalUp() {
-		if(estado==true && canal>=1 && canal<120) {
-			canal++;
-		}
-		else{
+		if (estado!=true || canal==120) {
 			return;
 		}
-		
-		
+		canal++;
 	}
 	
 	public void canalDown() {
-		if(estado==true && canal>1 && canal<=120) {
-			canal--;
-		}
-		else{
+		if (estado!=true || canal==0) {
 			return;
 		}
-		
+		canal--;
 	}
 	
 	//----------------------------------------------------------------
 	//cambiar volumen
 	
-	public void volumenlUP() {
-		if(estado==true && volumen>=0 && volumen<7) {
-			volumen++;
-		}
-		else{
+	public void volumenUp() {
+		if (estado!=true || volumen==7) {
 			return;
 		}
-		
+		volumen++;
 	}
-		
-	
 	
 	public void volumenDown() {
-		
-		if(estado==true && volumen>0 && volumen<=7) {
-			volumen--;
-		}
-		else{
+		if (estado!=true || volumen==0) {
 			return;
 		}
-		
+		volumen--;
 	}
-	
-	
 	
 	
 	
