@@ -5,9 +5,9 @@ public class TV {
 	//Atributos----------------------------------------------------------------
 	
 	private Marca marca;
-	private int canal = 1;
-	private int volumen = 1;
-	private int precio = 500;
+	private int canal;
+	private int volumen;
+	private int precio;
 	private boolean estado; //encendido true, apagado false
 	Control control;
 	
@@ -20,7 +20,9 @@ public class TV {
 		this.marca = marca;
 		this.estado = estado;
 		numTV++; //conteo de televisores cada que creo un objeto 
-		
+		this.canal=1;
+		this.volumen=1;
+		this.precio=500;
 		
 		}
 	
