@@ -44,6 +44,13 @@ public class Control {
 		tv.setVolumen(volumen);
 	}
 	
+	public TV getTv() {
+		return tv;
+	}
+
+	public void setTv(TV tv) {
+		this.tv = tv;
+	}
 	
 	
 	
