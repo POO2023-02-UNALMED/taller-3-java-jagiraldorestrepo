@@ -40,9 +40,9 @@ public class Control {
 		tv.volumenUp();
 	}
 	
-	/*public void setVolumen(int volumen) {
+	public void setVolumen(int volumen) {
 		tv.setVolumen(volumen);
-	}*/
+	}
 	
 	public TV getTv() {
 		return tv;
