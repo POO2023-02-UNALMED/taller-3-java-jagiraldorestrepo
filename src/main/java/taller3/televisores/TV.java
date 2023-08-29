@@ -41,34 +41,44 @@ public class TV {
 	//-------------------------------------------------------------------
 	//cambiar canal
 	public void canalUp() {
-		if (estado!=true || canal==120) {
+		if (estado = true && canal>=1 && canal < 120) {
+			canal++;
+		}
+		else {
 			return;
 		}
-		canal++;
+		
 	}
 	
 	public void canalDown() {
-		if (estado!=true || canal==0) {
+		if (estado = true && canal>1 && canal <= 120) {
+			canal--;
+		}
+		else {
 			return;
 		}
-		canal--;
 	}
 	
 	//----------------------------------------------------------------
 	//cambiar volumen
 	
 	public void volumenUp() {
-		if (estado!=true || volumen==7) {
+		if (estado=true && volumen>=0 && volumen < 7) {
+			canal++;
+		}
+		else {
 			return;
 		}
-		volumen++;
+		
 	}
 	
 	public void volumenDown() {
-		if (estado!=true || volumen==0) {
+		if (estado=true && volumen>0 && volumen <= 7) {
+			canal--;
+		}
+		else {
 			return;
 		}
-		volumen--;
 	}
 	
 	
@@ -89,10 +99,12 @@ public class TV {
 	}
 
 	public void setCanal(int canal) {
-		if (estado!=true || canal>120 || canal<1) {
+		if (estado = true && canal>=1 && canal <= 120) {
+			this.canal=canal;
+		}
+		else {
 			return;
 		}
-		this.canal=canal;
 	}
 
 	public int getPrecio() {
@@ -108,10 +120,12 @@ public class TV {
 	}
 
 	public void setVolumen(int volumen) {
-		if (estado!=true || volumen>7 || volumen<0) {
+		if (estado=true && volumen>=0 && volumen <= 7) {
+			this.volumen=volumen;
+		}
+		else {
 			return;
 		}
-		this.volumen=volumen;
 	}
 	
 
