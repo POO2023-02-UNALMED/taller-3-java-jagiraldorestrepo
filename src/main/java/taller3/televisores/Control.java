@@ -47,7 +47,7 @@ public class Control {
 	
 	
 	public void setVolumen(int volumen) {
-		tv.setVolumen(volumen);
+		this.tv.setVolumen(volumen);
 	}
 	
 	
