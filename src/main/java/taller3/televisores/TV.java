@@ -72,19 +72,23 @@ public class TV {
 		return estado;
 	}
 	
+	
+//------------------------------------------------------
 	public void canalUp() {
-		if (estado!=true || canal==120) {
+		if (estado=false || canal==120) {
 			return;
 		}
 		canal++;
 	}
 	
 	public void canalDown() {
-		if (estado!=true || canal==0) {
+		if (estado=false || canal==0) {
 			return;
 		}
 		canal--;
 	}
+	
+//----------------------------------------------------------
 	
 	public void volumenUp() {
 		if (estado!=true || volumen==7) {
