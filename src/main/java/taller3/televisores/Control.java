@@ -26,23 +26,23 @@ public class Control {
 	}
 	
 	public void canalUp() {
-		tv.canalUp();
+		this.tv.canalUp();
 	}
 	
 	public void canalDown() {
-		tv.canalDown();
+		this.tv.canalDown();
 	}
 	
 	public void volumenUp() {
-		tv.volumenUp();
+		this.tv.volumenUp();
 	}
 	
 	public void volumenDown() {
-		tv.volumenDown();
+		this.tv.volumenDown();
 	}
 	
 	public void setCanal(int canal) {
-		tv.setCanal(canal);
+		this.tv.setCanal(canal);
 	}
 	
 	
